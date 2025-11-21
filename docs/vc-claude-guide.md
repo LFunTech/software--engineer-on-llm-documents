@@ -36,6 +36,6 @@
 - 生成代码后仍需本地跑测试/校验。
 
 ## 与其他指南的衔接
-- 规格/规划：见 `docs/vc-openspec-planning.md`
-- 实现与测试流程：`docs/vc-implementation-cookbook.md`、`docs/vc-testing-guide.md`
-- Playwright 深入：`docs/vc-playwright-guide.md`（用于 UI 自动化测试）
+- 规格/规划：见 [docs/vc-openspec-planning.md](vc-openspec-planning.md)
+- 实现与测试流程：[docs/vc-implementation-cookbook.md](vc-implementation-cookbook.md)、[docs/vc-testing-guide.md](vc-testing-guide.md)
+- Playwright 深入：[docs/vc-playwright-guide.md](vc-playwright-guide.md)（用于 UI 自动化测试）

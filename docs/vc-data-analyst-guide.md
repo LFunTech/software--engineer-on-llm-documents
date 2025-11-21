@@ -5,7 +5,7 @@
 ## 前置
 - 读 `openspec/AGENTS.md`、`openspec/project.md`，了解规格格式与项目约定。
 - 查看变更/规格：`openspec list`，`openspec list --specs`；必要时用 `rg -n "Requirement:|Scenario:" openspec/specs` 查场景。
-- 工具：推荐 Claude Code（长文档/多文件总结）、Codex CLI（查询/补丁/脚本）、Cursor（行内改写）。OpenSpec CLI 速查 `docs/vc-openspec-tool-guide.md`。
+- 工具：推荐 Claude Code（长文档/多文件总结）、Codex CLI（查询/补丁/脚本）、Cursor（行内改写）。OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)。
 
 ## 工作流（从需求到交付）
 1) 澄清需求与数据来源
@@ -50,7 +50,7 @@
 
 ## 数据质量与测试
 - 轻量校验：空值、越界、重复、时间跨度缺口；用 SQL/脚本生成检查。
-- 对接测试工程师：将质量检查纳入自动化（可参考 `docs/vc-testing-guide.md`）。
+- 对接测试工程师：将质量检查纳入自动化（可参考 [docs/vc-testing-guide.md](vc-testing-guide.md)）。
 
 ## 交付清单
 - 规格/场景（OpenSpec）

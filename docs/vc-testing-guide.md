@@ -95,8 +95,8 @@
    - 测试文件、命令与结果、不确定性清单、建议的正式场景补全。
 
 ### UI 自动化测试（两种场景通用）
-> 如需 Playwright 的详细安装、配置、调试、CI 片段和稳定性技巧，请参考 `docs/vc-playwright-guide.md`。
-> OpenSpec CLI 常用命令：`docs/vc-openspec-tool-guide.md`（便于校对场景与变更）。
+> 如需 Playwright 的详细安装、配置、调试、CI 片段和稳定性技巧，请参考 [docs/vc-playwright-guide.md](vc-playwright-guide.md)。
+> OpenSpec CLI 常用命令：[docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)（便于校对场景与变更）。
 
 1) 选择框架
    - 优先复用现有（如 Playwright/Cypress）。命令示例：`npx playwright test`，`npx cypress run`。
@@ -180,5 +180,5 @@ test('status page shows ok state', async ({ page }) => {
 - 有规格的用例：列出覆盖的 `Requirement/Scenario`
 - 遗留用例：注释假设与待确认点
 - 命令/环境：可重复执行的命令、所需 env/config、数据准备说明
-- 产物：测试文件、trace/screenshot、运行结果
-> 工具参考：OpenSpec CLI `docs/vc-openspec-tool-guide.md`，终端/IDE/行内助手（Codex/Claude/Cursor）可见对应指南，UI 自动化深潜 `docs/vc-playwright-guide.md`。
+- 产物：测试文件、trace/screenshot、运行结果  
+> 工具参考：OpenSpec CLI [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)，终端/IDE/行内助手（Codex/Claude/Cursor）可见对应指南，UI 自动化深潜 [docs/vc-playwright-guide.md](vc-playwright-guide.md)。

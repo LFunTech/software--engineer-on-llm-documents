@@ -54,8 +54,8 @@ openspec/
 - 空格/标题：`## ADDED Requirements` 匹配精确文本（前后空格可忽略），场景标题用冒号。
 
 ## 与角色指南的衔接
-- BA：写/改需求、补场景 → `docs/vc-ba-guide.md`
-- 规划作者：脚手架与流程 → `docs/vc-openspec-planning.md`
+- BA：写/改需求、补场景 → [docs/vc-ba-guide.md](vc-ba-guide.md)
+- 规划作者：脚手架与流程 → [docs/vc-openspec-planning.md](vc-openspec-planning.md)
 - 实现/测试/运维：在执行前用 `openspec validate <id> --strict` 确认规格格式正确
 
 ## 进阶技巧

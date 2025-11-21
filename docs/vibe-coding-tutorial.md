@@ -9,15 +9,15 @@
 ## 使用方式
 - 顺序：基础 → 规划 → 实现 →（按角色）测试 或 运维。
 - 每个模块都是单独的详细指南：
-  - 基础：`docs/vc-foundations.md`（环境准备、安全、上手练习）
-  - OpenSpec 规划：`docs/vc-openspec-planning.md`（proposal、delta、校验）
-  - 业务分析/BA：`docs/vc-ba-guide.md`（需求梳理、场景补全、验收清单）
-  - 数据分析师：`docs/vc-data-analyst-guide.md`（数据理解、指标设计、查询/可视化、质量检查）
-  - 大数据工程师：`docs/vc-bigdata-guide.md`（管道设计、数据契约、质量/回填、性能/监控）
-  - 实现菜谱：`docs/vc-implementation-cookbook.md`（前端/后端落地流程）
-  - 测试工程师：`docs/vc-testing-guide.md`（测试矩阵、夹具、生成/运行测试、案例）
-  - 运维/发布工程师：`docs/vc-ops-guide.md`（CI/CD、上线核查、回滚、runbook、案例）
-  - 工具详解：Codex 终端助手 `docs/vc-codex-guide.md`、Claude Code `docs/vc-claude-guide.md`、Cursor 行内助手 `docs/vc-cursor-guide.md`、OpenSpec CLI `docs/vc-openspec-tool-guide.md`、Playwright UI 自动化 `docs/vc-playwright-guide.md`
+  - 基础：[docs/vc-foundations.md](vc-foundations.md)（环境准备、安全、上手练习）
+  - OpenSpec 规划：[docs/vc-openspec-planning.md](vc-openspec-planning.md)（proposal、delta、校验）
+  - 业务分析/BA：[docs/vc-ba-guide.md](vc-ba-guide.md)（需求梳理、场景补全、验收清单）
+  - 数据分析师：[docs/vc-data-analyst-guide.md](vc-data-analyst-guide.md)（数据理解、指标设计、查询/可视化、质量检查）
+  - 大数据工程师：[docs/vc-bigdata-guide.md](vc-bigdata-guide.md)（管道设计、数据契约、质量/回填、性能/监控）
+  - 实现菜谱：[docs/vc-implementation-cookbook.md](vc-implementation-cookbook.md)（前端/后端落地流程）
+  - 测试工程师：[docs/vc-testing-guide.md](vc-testing-guide.md)（测试矩阵、夹具、生成/运行测试、案例）
+  - 运维/发布工程师：[docs/vc-ops-guide.md](vc-ops-guide.md)（CI/CD、上线核查、回滚、runbook、案例）
+  - 工具详解：Codex 终端助手 [docs/vc-codex-guide.md](vc-codex-guide.md)、Claude Code [docs/vc-claude-guide.md](vc-claude-guide.md)、Cursor 行内助手 [docs/vc-cursor-guide.md](vc-cursor-guide.md)、OpenSpec CLI [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)、Playwright UI 自动化 [docs/vc-playwright-guide.md](vc-playwright-guide.md)
 - 本页提供总览与速查，深度步骤请进入对应模块。
 
 ## 工具概览
@@ -48,14 +48,14 @@
 
 ## 新手路线（0-1 天）
 1) 安装与验证
-   - 按 `docs/vc-foundations.md` 完成工具安装、登录、仓库权限检查。
+   - 按 [docs/vc-foundations.md](vc-foundations.md) 完成工具安装、登录、仓库权限检查。
    - 在仓库根目录运行：`openspec list`、`openspec list --specs`、`rg --files | head`。
 2) 读规则
    - 打开 `openspec/AGENTS.md`、`openspec/project.md`，弄清命名、格式与禁忌。
 3) 选择练习案例
    - 建议用文档里“项目状态面板”案例，覆盖前后端、测试与运维。
 4) 先规划再动手
-   - 按 `docs/vc-openspec-planning.md` 脚手架 change 目录，写 proposal、tasks、delta。
+   - 按 [docs/vc-openspec-planning.md](vc-openspec-planning.md) 脚手架 change 目录，写 proposal、tasks、delta。
 5) 分阶段实现
    - 依次完成后端 → 前端 → 测试 → 运维（见下方完整案例），每阶段都要跑验证。
 6) 复盘

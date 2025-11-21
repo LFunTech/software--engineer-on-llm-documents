@@ -24,7 +24,7 @@
 ### 4) 测试与故事
 - 提示： “为 `StatusBadge` 写 Jest/RTL 测试：渲染文本、按状态上色、错误兜底。”
 - 提示： “添加 Storybook 控件 story，支持 `status` 与 `message`，文件放 `StatusBadge.stories.tsx`。”
-- UI 自动化：如需端到端覆盖，参考 `docs/vc-playwright-guide.md` 生成 Playwright 用例（加载/成功/失败三态）。
+- UI 自动化：如需端到端覆盖，参考 [docs/vc-playwright-guide.md](vc-playwright-guide.md) 生成 Playwright 用例（加载/成功/失败三态）。
 
 ### 5) 验收清单
 - props 有校验/类型
@@ -59,7 +59,7 @@
 - “生成 <file> 的最小补丁，限制 50 行内，不引入新依赖。”
 - “列出该组件/处理器的边界情况，并为前三个写测试。”
 - “只给 diff，不要解释。”
-> 工具配合：终端补丁与搜索见 `docs/vc-codex-guide.md`；多文件 diff 见 `docs/vc-claude-guide.md`；行内改动见 `docs/vc-cursor-guide.md`；UI 自动化见 `docs/vc-playwright-guide.md`；OpenSpec CLI 速查 `docs/vc-openspec-tool-guide.md`（编/读规格与校验）。
+> 工具配合：终端补丁与搜索见 [docs/vc-codex-guide.md](vc-codex-guide.md)；多文件 diff 见 [docs/vc-claude-guide.md](vc-claude-guide.md)；行内改动见 [docs/vc-cursor-guide.md](vc-cursor-guide.md)；UI 自动化见 [docs/vc-playwright-guide.md](vc-playwright-guide.md)；OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)。
 
 ## 多工具协作
 - Codex CLI：快速搜索、小补丁、跑测试。
@@ -100,7 +100,7 @@
 - 规格与实现一致，未新增未定义行为。
 - 日志/错误处理符合现有模式。
 - 测试覆盖成功+主要失败路径，命令可复现。
-- 验收前再跑：`openspec validate <id> --strict`，并记录测试命令/结果（OpenSpec CLI 详见 `docs/vc-openspec-tool-guide.md`）。
+- 验收前再跑：`openspec validate <id> --strict`，并记录测试命令/结果（OpenSpec CLI 详见 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)）。
 
 ## 自检（提审前）
 - diff 小而聚焦

@@ -34,7 +34,7 @@
 
 ## 与 OpenSpec 协同
 - 查看变更/规格：`openspec list`，`openspec list --specs`
-- 起草/验证变更：见 `docs/vc-openspec-planning.md`；校验用 `openspec validate --strict`
+- 起草/验证变更：见 [docs/vc-openspec-planning.md](vc-openspec-planning.md)；校验用 `openspec validate --strict`
 
 ## 调试与故障
 - 命令失败：检查路径/权限；必要时重跑并附错误日志。

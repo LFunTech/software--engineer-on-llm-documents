@@ -35,6 +35,6 @@
 - 对大改动先在聊天获取方案，再分块应用。
 
 ## 与其他指南的衔接
-- 规划与规格：`docs/vc-openspec-planning.md`
-- 实现流程：`docs/vc-implementation-cookbook.md`
-- 测试/自动化：`docs/vc-testing-guide.md`，UI 自动化详见 `docs/vc-playwright-guide.md`
+- 规划与规格：[docs/vc-openspec-planning.md](vc-openspec-planning.md)
+- 实现流程：[docs/vc-implementation-cookbook.md](vc-implementation-cookbook.md)
+- 测试/自动化：[docs/vc-testing-guide.md](vc-testing-guide.md)，UI 自动化详见 [docs/vc-playwright-guide.md](vc-playwright-guide.md)

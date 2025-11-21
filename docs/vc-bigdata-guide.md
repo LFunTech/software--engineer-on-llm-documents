@@ -5,7 +5,7 @@
 ## 前置
 - 读 `openspec/AGENTS.md`、`openspec/project.md`。
 - 查看变更/规格：`openspec list`，`openspec list --specs`。
-- 工具：Codex CLI（终端补丁/命令）、Claude Code（多文件 diff 规划）、Cursor（行内修改）；OpenSpec CLI 速查 `docs/vc-openspec-tool-guide.md`。
+- 工具：Codex CLI（终端补丁/命令）、Claude Code（多文件 diff 规划）、Cursor（行内修改）；OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)。
 
 ## 工作流（示例）
 1) 理解需求与数据契约

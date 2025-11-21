@@ -6,8 +6,8 @@
 - 读 `openspec/AGENTS.md`、`openspec/project.md`：了解格式、禁用命令和项目约定。
 - 了解变更：`openspec list` 查看在研变更；阅读对应 `proposal.md`、`tasks.md`。
 - 工具：可运行 CI 等价命令（如 `npm test`、`npm run lint`），具备部署权限/账户。
-  - OpenSpec CLI 速查：`docs/vc-openspec-tool-guide.md`
-  - UI 冒烟（可选）：Playwright 详见 `docs/vc-playwright-guide.md`
+  - OpenSpec CLI 速查：[docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)
+  - UI 冒烟（可选）：Playwright 详见 [docs/vc-playwright-guide.md](vc-playwright-guide.md)
 
 ## 快速落地流程（约60分钟）
 1) 理解变更与风险
@@ -20,7 +20,7 @@
 4) 部署与冒烟
    - 提问： “上线后需要的冒烟测试列表与命令（含后端 API、前端页面、日志/指标观察点）。”
    - 执行建议命令；记录结果。
-   - 如含 UI 自动化冒烟，可调用 Playwright：`npx playwright test tests/ui/status.spec.ts --reporter=line`（详见 `docs/vc-playwright-guide.md`）。
+   - 如含 UI 自动化冒烟，可调用 Playwright：`npx playwright test tests/ui/status.spec.ts --reporter=line`（详见 [docs/vc-playwright-guide.md](vc-playwright-guide.md)）。
 5) 回滚预案
    - 提问： “在出错时的回滚步骤，含命令、数据保护、验证恢复的检查。”
 6) 交付

@@ -93,4 +93,4 @@
 - 有归档示例时复用结构与措辞。
 - 每个需求至少一个场景，避免校验失败。
 
-> 工具配合：终端驱动请见 `docs/vc-codex-guide.md`；OpenSpec CLI 速查 `docs/vc-openspec-tool-guide.md`；IDE/多文件 diff 使用 `docs/vc-claude-guide.md`；行内修改参考 `docs/vc-cursor-guide.md`。
+> 工具配合：终端驱动请见 [docs/vc-codex-guide.md](vc-codex-guide.md)；OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)；IDE/多文件 diff 使用 [docs/vc-claude-guide.md](vc-claude-guide.md)；行内修改参考 [docs/vc-cursor-guide.md](vc-cursor-guide.md)。

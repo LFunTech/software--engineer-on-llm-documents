@@ -11,7 +11,7 @@
 ## 前置
 - 阅读 `openspec/AGENTS.md`（格式、禁忌）、`openspec/project.md`（项目规则）
 - 查看现状：`openspec list`、`openspec list --specs`
-- 工具：建议使用 Claude Code（大文件总结）、Codex CLI（命令/搜索）、Cursor（快速改写）；OpenSpec CLI 速查 `docs/vc-openspec-tool-guide.md`
+- 工具：建议使用 Claude Code（大文件总结）、Codex CLI（命令/搜索）、Cursor（快速改写）；OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)
 
 ## 工作流
 1) 获取上下文（只读）
@@ -74,4 +74,4 @@
 - Codex CLI：快速搜索规格/任务、查看文件、运行 `openspec validate` 检查格式。
 - Cursor：对单个文档/规格行内改写、补充场景。
 
-> 进阶：当规格稳定后，让测试工程师按 `docs/vc-testing-guide.md` 生成自动化；前后端按 `docs/vc-implementation-cookbook.md` 取任务。
+> 进阶：当规格稳定后，让测试工程师按 [docs/vc-testing-guide.md](vc-testing-guide.md) 生成自动化；前后端按 [docs/vc-implementation-cookbook.md](vc-implementation-cookbook.md) 取任务。

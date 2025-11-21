@@ -53,7 +53,7 @@
 5) 25 分钟：总结与自检
    - 提问： “我们改了什么？风险点有哪些？应跑哪些测试？” 记录在笔记/PR 草稿中。
 
-> 具体工具操作可参考：Codex 终端助手 `docs/vc-codex-guide.md`，Claude Code `docs/vc-claude-guide.md`，Cursor 行内助手 `docs/vc-cursor-guide.md`，UI 自动化 `docs/vc-playwright-guide.md`。
+> 具体工具操作可参考：Codex 终端助手 [docs/vc-codex-guide.md](vc-codex-guide.md)，Claude Code [docs/vc-claude-guide.md](vc-claude-guide.md)，Cursor 行内助手 [docs/vc-cursor-guide.md](vc-cursor-guide.md)，UI 自动化 [docs/vc-playwright-guide.md](vc-playwright-guide.md)。
 
 ## 安全与卫生
 - 先用只读命令（`ls`、`rg`、`cat`、`git status -sb`）。
