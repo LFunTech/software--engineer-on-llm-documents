@@ -1,0 +1,24 @@
+# 目录（GitBook）
+
+- [入口：仓库导航](README.md)
+- 速览与案例
+  - [Vibe Coding 总览与端到端案例](vibe-coding-tutorial.md)
+- 规则与规格
+  - [OpenSpec 规划与变更流程](vc-openspec-planning.md)
+  - [OpenSpec CLI 使用指南](vc-openspec-tool-guide.md)
+- 入门
+  - [基础上手（新人）](vc-foundations.md)
+  - [业务分析 / BA](vc-ba-guide.md)
+  - [数据分析师](vc-data-analyst-guide.md)
+  - [大数据工程师](vc-bigdata-guide.md)
+- 实现
+  - [前端 / 后端实现菜谱](vc-implementation-cookbook.md)
+- 测试
+  - [测试工程师手册](vc-testing-guide.md)
+  - [Playwright 深入指南](vc-playwright-guide.md)
+- 运维与发布
+  - [运维 / 发布工程师手册](vc-ops-guide.md)
+- 工具
+  - [Codex 终端助手](vc-codex-guide.md)
+  - [Claude Code](vc-claude-guide.md)
+  - [Cursor 行内助手](vc-cursor-guide.md)
