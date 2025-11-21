@@ -6,22 +6,27 @@
 - 读 `openspec/AGENTS.md`、`openspec/project.md`。
 - 查看变更/规格：`openspec list`，`openspec list --specs`。
 - 工具：Codex CLI（终端补丁/命令）、Claude Code（多文件 diff 规划）、Cursor（行内修改）；OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)。
+- AI 协同心态：先让助手列前提/假设/缺口，再要方案；要求输出分层设计、字段映射、质量/延迟检查与验证命令，避免只给概念。
 
 ## 工作流（示例）
 1) 理解需求与数据契约
    - 提问： “总结 <pipeline/feature> 需求，列输入/输出表、SLA、数据质量要求，标存在的空白。”
    - 在 OpenSpec delta 中补充/更新数据契约、SLA、质量场景。
+   - AI 协同：要求助手标注假设和未确认字段来源，输出 OpenSpec 补丁或待确认列表。
 2) 管道/模型设计
    - 提问： “为 <source→sink> 生成分层设计（staging/cleaned/serving），列字段映射、去重/校准策略。”
    - 输出初稿到 `design.md`（如需要），并在 specs 中添加 ADDED/MODIFIED 场景。
+   - AI 协同：限制“单文件补丁/分步”并要求解释资源/性能假设与验证方法。
 3) 数据质量与监控
    - 提问： “列出需要的质量检查（空/重复/越界/延迟），生成对应 SQL/代码片段。”
    - 为延迟/丢失添加场景，便于测试与告警。
+   - AI 协同：让助手附触发阈值、告警/观测命令，强调可复现。
 4) 回填/修复计划
    - 提问： “生成回填步骤（分批/幂等/对账），含命令和验证点。”
    - 在 tasks 中加入“回填”和“对账”子任务。
 5) 性能与成本
    - 提问： “现有查询/作业的瓶颈在哪里（I/O/倾斜/Shuffle），给出 3 条优化建议，并生成最小改动补丁。”
+   - AI 协同：要求给出预期提升和验证指标（耗时/成本/资源），先在小数据集试跑。
 6) 部署与验证
    - 对应运行命令（依赖项目栈：如 `spark-submit`、`flink run`、`dbt run/test` 等）；记录结果。
    - 复用测试指南：将质量检查纳入自动化/CI。

@@ -8,6 +8,7 @@
 - 工具：可运行 CI 等价命令（如 `npm test`、`npm run lint`），具备部署权限/账户。
   - OpenSpec CLI 速查：[docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)
   - UI 冒烟（可选）：Playwright 详见 [docs/vc-playwright-guide.md](vc-playwright-guide.md)
+- AI 协同心态：让助手先列假设/风险与需要的证据（命令/日志/截图），再给步骤；要求输出可执行命令和回滚口令，而非泛泛流程。
 
 ## 快速落地流程（约60分钟）
 1) 理解变更与风险
@@ -17,12 +18,14 @@
    - 校验本地/CI 命令：`openspec validate <id> --strict`，`npm run lint`，`npm test`（按项目替换）。
 3) 部署前核查
    - 提问： “列出上线前检查清单（配置/密钥/迁移/依赖服务）。如缺项，给具体命令。”
+   - AI 协同：要求附命令/查询示例并标注可接受阈值。
 4) 部署与冒烟
    - 提问： “上线后需要的冒烟测试列表与命令（含后端 API、前端页面、日志/指标观察点）。”
    - 执行建议命令；记录结果。
    - 如含 UI 自动化冒烟，可调用 Playwright：`npx playwright test tests/ui/status.spec.ts --reporter=line`（详见 [docs/vc-playwright-guide.md](vc-playwright-guide.md)）。
 5) 回滚预案
    - 提问： “在出错时的回滚步骤，含命令、数据保护、验证恢复的检查。”
+   - AI 协同：要求助手输出触发条件→回滚动作→验证命令的对照表。
 6) 交付
    - 输出：CI 变更、上线核查结果、冒烟/指标截图或日志、回滚步骤与触发条件。
 

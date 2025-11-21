@@ -28,6 +28,7 @@
    - 大数据工程师：[vc-bigdata-guide.md](vc-bigdata-guide.md)
    - 前端/后端实现：[vc-implementation-cookbook.md](vc-implementation-cookbook.md)
    - 测试工程师：[vc-testing-guide.md](vc-testing-guide.md)
+   - 数据库运维/DBA：[vc-dba-guide.md](vc-dba-guide.md)
    - 运维/发布工程师：[vc-ops-guide.md](vc-ops-guide.md)
 3) 工具深入（按需）：
    - Codex 终端：[vc-codex-guide.md](vc-codex-guide.md)

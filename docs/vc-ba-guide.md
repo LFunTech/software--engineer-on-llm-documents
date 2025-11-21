@@ -12,19 +12,24 @@
 - 阅读 `openspec/AGENTS.md`（格式、禁忌）、`openspec/project.md`（项目规则）
 - 查看现状：`openspec list`、`openspec list --specs`
 - 工具：建议使用 Claude Code（大文件总结）、Codex CLI（命令/搜索）、Cursor（快速改写）；OpenSpec CLI 速查 [docs/vc-openspec-tool-guide.md](vc-openspec-tool-guide.md)
+- AI 协同心态：先让助手列假设/缺口和需确认点，再要结论；要求引用文件路径并输出 OpenSpec 草稿/问题清单，避免口头建议。
 
 ## 工作流
 1) 获取上下文（只读）
    - 命令：`openspec list --specs`，`rg -n "Requirement:|Scenario:" openspec/specs`
    - 提问（Claude/Codex）： “总结与 <domain> 相关的需求与场景，列可能冲突点，不要修改文件。”
+   - AI 协同：要求先列假设/不确定项，输出文件路径+场景列表，方便人工复核。
 2) 识别空白与风险
    - 提问： “列出需求中的歧义、高风险（数据/权限/性能），按优先级排序，给出需确认问题。”
+   - AI 协同：让助手按优先级输出问题单和决策选项，便于拉人确认。
 3) 补充/编写需求草稿
    - 按 OpenSpec 格式（ADDED/MODIFIED + `#### Scenario:`）撰写，放在对应 `openspec/changes/<id>/specs/<capability>/spec.md`
    - 提问： “为 <feature> 生成 ADDED 需求和至少两个场景（成功/失败），用 OpenSpec 格式。”
+   - AI 协同：限制“只改该 spec 文件”“保持现有命名/风格”，要求补丁前先解释意图。
 4) 核对前后端影响
    - 提问： “此需求涉及的前端视图/状态、后端接口/数据字段是哪些？列验收要点。”
    - 输出验收清单，方便测试/研发对齐。
+   - AI 协同：让助手把验收要点转成可执行检查项（字段、接口、页面路径）。
 5) 任务分解（非实现）
    - 在 `tasks.md` 草拟 5–7 条可验证任务（规格完善、设计、前后端、测试、上线说明）。
 6) 回合评审

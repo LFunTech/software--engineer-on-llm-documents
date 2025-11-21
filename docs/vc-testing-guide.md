@@ -6,6 +6,7 @@
 - 读 `openspec/AGENTS.md`、`openspec/project.md`：了解命名/格式/禁止操作。
 - 探索规格：`openspec list`、`openspec list --specs`、`rg -n "Requirement:|Scenario:" openspec/specs`
 - 环境：能在仓库根目录运行 `npm test`（或项目等价命令）；安装 Git/Node。
+- AI 协同心态：要求助手先把规格场景转成测试矩阵和假设清单，再给补丁；输出需包含文件路径、命令和断言/数据来源，避免“泛泛建议”。
 
 ## 快速上手流程（约60–90分钟）
 1) 获取上下文

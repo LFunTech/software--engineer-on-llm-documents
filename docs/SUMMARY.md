@@ -17,6 +17,7 @@
   - [测试工程师手册](vc-testing-guide.md)
   - [Playwright 深入指南](vc-playwright-guide.md)
 - 运维与发布
+  - [数据库运维 / DBA](vc-dba-guide.md)
   - [运维 / 发布工程师手册](vc-ops-guide.md)
 - 工具
   - [Codex 终端助手](vc-codex-guide.md)
